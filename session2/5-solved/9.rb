@@ -113,3 +113,31 @@ def deaf_grandma
   end
 end
 
+#Chris Ward
+
+def deaf_grandma
+  input = ""
+  while input != "BYE"
+    input = gets.chomp
+    if input == "BYE"
+      break
+    elsif input == "" || input != input.upcase
+      puts "HUH?! SPEAK UP, SONNY!"
+    else
+      puts "NO, NOT SINCE 1938!"
+    end
+  end
+end
+
+#Phil
+def deaf_grandma
+  response = gets.chomp
+  while response != "BYE"
+    if response != "" && response == response.upcase
+      puts "NO, NOT SINCE 1938!"
+    else
+      puts "HUH?! SPEAK UP, SONNY!"
+    end
+    response = gets.chomp
+  end
+end

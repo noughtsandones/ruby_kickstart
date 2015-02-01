@@ -3,7 +3,7 @@
 # The Green Thumb Nursery calls you up "hey, remember that list of trees we sent you?"
 # "Sure" you reply, fondly reveling in the brillinace of your regular expression that
 # parsed it. "We want you to put it in a webpage for us" they tell you.
-# 
+#
 # Given the same inputs as challenge 7, output results in string format like this:
 #   <!doctype html>
 #   <html>
@@ -14,11 +14,11 @@
 #       <h1>Catalog</h1>
 #       <table>
 #         <tr>
-#           <th>Type of tree</th>
-#           <th>Size of the tree</th>
-#           <th>Price of the tree</th>
+#           <td>Type of tree</td>
+#           <td>Size of the tree</td>
+#           <td>Price of the tree</td>
 #         </tr>
-#         
+#
 #         <!-- Put records here -->
 #         <tr>
 #           <td>American Redbud Tree</td>

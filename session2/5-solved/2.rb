@@ -129,3 +129,27 @@ def hi_hi_goodbye
     end
   end
 end
+
+#Chris Ward
+
+def hi_hi_goodbye
+
+  input = ''
+  while input != "bye"
+    puts "Please enter a number"
+    input = gets.chomp
+      input.to_i.times {puts "hi"}
+  end
+  puts "goodbye"
+end
+
+#Phil
+def hi_hi_goodbye
+  puts "Enter a number"
+  input = gets.chomp
+  while input != "bye"
+    puts "hi " * input.to_i
+    input = gets.chomp
+  end
+  puts "goodbye"
+end

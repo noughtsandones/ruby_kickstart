@@ -108,3 +108,28 @@ def sum_difference_product
 
   print result
 end
+
+#Chris Ward
+
+def sum_difference_product
+  input = gets.chomp.split
+  x = input[0].to_i
+  y = input[1].to_i
+
+  puts x+y
+  puts x-y
+  puts x*y
+  
+end
+
+#Phil
+def sum_difference_product
+  input = gets.chomp
+  inputArray = input.split " "
+  a = inputArray[0].to_i
+  b = inputArray[1].to_i
+  puts (a + b).to_s
+  puts (a - b).to_s
+  puts (a * b).to_s
+end
+
