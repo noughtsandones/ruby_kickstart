@@ -293,6 +293,18 @@ def odds_and_evens(string, return_odds)
 result
 end
 
+#Louise
+def odds_and_evens(string, return_odds)
+  new_string = ""
+  string.length.times do |index|
+    next if return_odds && index.even?
+    next if !return_odds && index.odd?
+    new_string << string [index]
+  end
+  new_string
+end
+
+
 #Chris Ward
 
 def odds_and_evens(string, return_odds)
@@ -317,3 +329,5 @@ end
 new_string
 
 end
+
+

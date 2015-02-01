@@ -127,6 +127,11 @@ def ten_twenty(n)
 	end
 end
 
+#Louise
+def ten_twenty(n)
+  n % 2 == 0 ? 10 : 20
+end
+
 #Carrie Christenson
 def ten_twenty(n)
 	if	n % 2 == 0
@@ -141,3 +146,4 @@ end
 def ten_twenty(n)
   10 : 20 if n.even?
 end
+

@@ -134,6 +134,11 @@ def arithmetic2(a, b)
   end
 end
 
+#Louise
+def arithmetic2(a, b)
+  a < b ? a / 2.0 : b / 2.0
+end
+
 #Carrie Christenson
 def arithmetic2(a, b)
 	if a < b
@@ -152,3 +157,4 @@ def arithmetic2(a, b)
 		b/2.to_f
 	end
 end
+

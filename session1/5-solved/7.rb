@@ -197,6 +197,17 @@ def pirates_say_arrrrrrrrr(string)
  str
 end
 
+#Louise
+def pirates_say_arrrrrrrrr(string)
+  rtn = String.new
+  (string.size-1).times do |index|
+    if string[index] == "r" || string[index] == "R"
+      rtn << string[index +1]
+      end
+    end
+  rtn
+end
+
 #Carrie Christenson
 def pirates_say_arrrrrrrrr(string)
  	answer = String.new

@@ -82,6 +82,11 @@ def arithmetic1(n)
   (n * 5) - 20
 end
 
+#Louise
+def arithmetic1(n)
+  n * 5 - 20
+end
+
 # Carrie Christenson
 def arithmetic1(n)
 	n * 5 -20
