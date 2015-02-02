@@ -91,15 +91,15 @@ class String
     index = 0
 
     letters = self.split("").each do |letter|
-     
+
       array << letter if index.even?
-  
+
       print array
       index += 1
-      
+
     end
     return array
-    
+
   end
 
 end
@@ -162,5 +162,16 @@ class String
       end
     end
     output
+  end
+end
+
+#2.3 Louise
+class String
+  def every_other_char
+    rtn = ''
+    each_char.with_index do |a, b|
+      rtn << a if b.even?
+    end
+    rtn
   end
 end

@@ -97,7 +97,7 @@ def hi_hi_goodbye
       else
         integer = input.to_i
         puts "hi " * integer
-      end 
+      end
     end
 end
 
@@ -152,4 +152,15 @@ def hi_hi_goodbye
     input = gets.chomp
   end
   puts "goodbye"
+end
+
+#2.2 Louise
+
+def hi_hi_goodbye
+  puts "Enter a number or bye: "
+  while (input = gets.chomp) && (input != "bye")
+    input.to_i.times { puts "hi" }
+    puts "Enter a number or bye: "
+  end
+  puts "Goodbye"
 end

@@ -18,10 +18,18 @@ numbers # => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 result = []
 numbers.each_slice(2) { |a, b| result << [a, b] }
 result # => [[0, 1], [2, 3], [4, 5], [6, 7], [8, 9]]
-
+numbers # => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # iterate over the array in groups of two
 # hitting each group as we go
 result = []
 numbers[0..5].each_cons(2) { |a, b| result << [a, b] }
 result # => [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]
+numbers [0..5] # => [0, 1, 2, 3, 4, 5]
+[1,2,3].permutation { |perm| p perm } # => [1, 2, 3]
+# >> [1, 2, 3]
+# >> [1, 3, 2]
+# >> [2, 1, 3]
+# >> [2, 3, 1]
+# >> [3, 1, 2]
+# >> [3, 2, 1]

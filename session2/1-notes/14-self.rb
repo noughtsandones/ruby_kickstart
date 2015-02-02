@@ -10,7 +10,7 @@ end
 
 class String
   def existential
-    self # => "abc"
+    self # => "ac"
   end
 end
 "abc".existential
@@ -28,8 +28,7 @@ class Example
   # These will all work, because they all invoke new on
   # Example. Explicitly in the first two cases, implicitly
   # in the third.
-  Example.new # => #<Example:0x00000100863818>
-  self.new    # => #<Example:0x000001008634f8>
-  new         # => #<Example:0x000001008631d8>
+  Example.new # => #<Example:0x007fcba28497f0>
+  self.new    # => #<Example:0x007fcba28494f8>
+  new         # => #<Example:0x007fcba2849200>
 end
-

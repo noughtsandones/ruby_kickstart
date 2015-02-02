@@ -1,10 +1,10 @@
 #paul fitz
 def sum_difference_product
   # your code goes here
- 	a, b = gets.split.map {|x| x.to_i} #unless user input is a single word or number the input will need to be turned into a list of strings or numbers. Returns a splt string in an array 
+ 	a, b = gets.split.map {|x| x.to_i} #unless user input is a single word or number the input will need to be turned into a list of strings or numbers. Returns a splt string in an array
  	puts a + b 						   #maps method allows you to run an operation on each of your array's objects and return them all in the same place
  	puts a - b 						   #to_i changes the input to an integer allowing you to add/subtract/multiply
- 	puts a * b					
+ 	puts a * b
 end
 sum_difference_product
 
@@ -57,14 +57,14 @@ end
 def sum_difference_product
   a = gets.chomp
   b = gets.chomp
-  a + b 
+  a + b
 end
 
 
 # Rizwan Ali
 def sum_difference_product
   a, b = gets.split.map! {|x| x.to_i}
-  
+
   puts (a + b)
   puts (a - b)
   puts (a * b)
@@ -75,7 +75,7 @@ end
 def sum_difference_product
 
   input = gets.chomp.split
-  a = input[0].to_i 
+  a = input[0].to_i
   b = input[1].to_i
 
   puts a + b
@@ -97,7 +97,7 @@ end
 # Tom Coakes
 def sum_difference_product
   str_input = gets.chomp
-  
+
   int_input = str_input.split(' ').map { |str| str.to_i }
 
   sum = int_input[0] + int_input[1]
@@ -119,7 +119,7 @@ def sum_difference_product
   puts x+y
   puts x-y
   puts x*y
-  
+
 end
 
 #Phil
@@ -133,3 +133,16 @@ def sum_difference_product
   puts (a * b).to_s
 end
 
+#2.1 Louise
+
+def sum_difference_product
+  a, b = gets.split.map {|n| n.to_i}
+  puts a + b
+  puts a - b
+  puts a * b
+end
+
+#Notes:
+#1. split : splits a string (in this case, two numbers) into seperate blocks of data and transfers these blocks into an array.
+#2. map : runs an operation (defined within a block) on each object in an array and outputs the result.
+#3. num.to_i : changes user input to integers so that the program can + - *.
